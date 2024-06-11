@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/aula-1/styles/doc.css">
+</head>
+<body>
+    <div class="layout-principal">
+        <header>
+            <div class="menu-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="menu-links">
+                    <a href="doc1.html">Home</a>
+                    <a href="doc2.html">Sobre</a>
+                    <a href="doc3.html">Contato</a>
+                </nav>
+            </div>
+        </header>
+        <div class="conteudo">
+            <nav></nav>
+            <main>
+                <div class="centro">
+                    <main class="apresentacao">
+                        <section class="apresentacao-conteudo">
+                            <h1>Um pouco sobre mim:</h1>
+                            <p>Eu sou uma pessoa inquieta que já praticou muitos esportes sendo o que eu pratiquei por 
+                                mais tempo sendo o basquete, devido a uma lesão no quadril tive que parar de jogar, porem 
+                                ainda me arrependo de ter parado, pois gostaria de ter jogado pelo menos até me formar no 
+                                ensino médio, sendo um ex atleta de jogos de coletividade me acostumei a fazer muitas
+                                me acostumei a ser cooperativo e pensar no bem maior em qualquer área da minha vida.</p>
+                        </section>
+                        <img src="/aula-1/assets/eu.jpg" alt="foto minha com minha mãe">
+                    </main>
+                </div>
+            </main>
+            <aside></aside>
+        </div>
+        <footer>
+            <div class="footer-conteudo">
+                <h2>Obrigado pela visita</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu-links');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

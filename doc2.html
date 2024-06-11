@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/aula-1/styles/doc.css">
+</head>
+<body>
+    <div class="layout-principal">
+        <header>
+            <div class="menu-container">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="menu-links">
+                    <a href="doc1.html">Home</a>
+                    <a href="doc2.html">Sobre</a>
+                    <a href="doc3.html">Contato</a>
+                </nav>
+            </div>
+        </header>
+        <div class="conteudo">
+            <nav></nav>
+            <main>
+                <div class="centro">
+                    <main class="apresentacao">
+                        <section class="apresentacao-conteudo">
+                            <h3>Sobre o desenvolvedor:</h3>
+                            <p>Olá! Sou Carlos Gustavo Santos, sou um estudante de Analise e Desenvolvimento
+                                de Sistemas(ADS) na Universidade de Passo Fundo(UPF) e Ciências da Computação
+                                (CC) na Instituto Sul Rio Grandense(IFSul). Eu esclhi a área de TI pois sempre tive 
+                                curiosidade sobre computadores, tecnoligias relacionadas a criação de sites e jogos</p>
+                        </section>
+                        <img src="/aula-1/assets/eu_2.jpg" alt="foto minha">
+                    </main>
+                </div>
+            </main>
+            <aside></aside>
+        </div>
+        <footer>
+            <div class="footer-conteudo">
+                <h2>Obrigado pela visita</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu-links');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

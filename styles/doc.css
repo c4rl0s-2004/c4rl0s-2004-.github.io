@@ -1,0 +1,121 @@
+:root {
+    --tam-header: 15vh;
+    --tam-footer: 10vh;
+    --tam-conteudo: calc(100vh - var(--tam-footer) - var(--tam-header));
+    --tam-conteudo2: calc(95vh - var(--tam-footer) - var(--tam-header));
+    --cor-primaria: #392F2F;
+    --cor-secundaria: #3A7563;
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    color: #FFF0F5;
+}
+
+body {
+    margin: 0;
+}
+
+.layout-principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-principal > header {
+    height: var(--tam-header);
+    background-color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF0F5;
+    margin: 4px 0;
+}
+
+.menu-links {
+    display: none;
+}
+
+.menu-links.active {
+    display: flex;
+    align-items: center;
+}
+
+.menu-links a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #FFF0F5;
+    text-decoration: none;
+}
+
+.menu-links a i {
+    margin-right: 5px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--tam-conteudo);
+    background-color: var(--cor-secundaria);
+}
+
+nav {
+    height: var(--tam-conteudo2);
+    width: 10vw;
+    background-color: var(--cor-secundaria);
+}
+
+.conteudo > main {
+    height: var(--tam-conteudo2);
+    width: 70vw;
+}
+
+.div.centro > main {
+    background-color: black;
+}
+
+.apresentacao {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.apresentacao-conteudo {
+    width: 50%;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-family: 'Segoe UI';
+}
+
+.apresentacao img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin-left: 100px;
+}
+
+footer {
+    height: var(--tam-footer);
+    background-color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
